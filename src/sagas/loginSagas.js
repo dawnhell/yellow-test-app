@@ -9,6 +9,6 @@ function* login () {
   yield put(setTokenActionCreator(token));
 }
 
-export default function* loginSaga() {
+export default function* loginSagas () {
   yield takeEvery(actions.LOGIN, login);
 }

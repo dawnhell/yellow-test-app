@@ -5,7 +5,7 @@ import Login from '../../components/Login';
 import { loginActionCreator } from '../../reducers/Login/actions';
 
 const mapStateToProps = (state) => ({
-  token: state.loginStore.token
+  authToken: state.loginStore.authToken
 });
 
 const mapDispatchToProps = (dispatch) => ({

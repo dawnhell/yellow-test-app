@@ -1,0 +1,54 @@
+header {
+    height: 115px;
+    background: #7ed321;
+}
+
+header .logo-icon {
+    display: inline-block;
+    margin: 30px 40px;
+}
+
+header .logo-icon img {
+    width: 145px;
+}
+
+.nav-list {
+    float: right;
+    margin: 35px 0;
+}
+
+.nav-list ul {
+    margin: 0;
+}
+
+.nav-list ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.nav-list ul li a {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-list ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-list .logout-icon:hover {
+    border-bottom: 0;
+    background: url('../../images/logout_icon.png');
+}
+
+.nav-list .logout-icon {
+    display: inline-block;
+    background: url('../../images/logout_icon.png');
+    width: 40px;
+    height: 40px;
+    transition: .4s background;
+}
