@@ -18,3 +18,13 @@ export const getJogsRequest = () => fetch('https://jogtracker.herokuapp.com/api/
   })
 })
   .then(_ => _.json());
+
+export const addJogRequest = (jog) => fetch('https://jogtracker.herokuapp.com/api/v1/data/jog', {
+  method: 'POST',
+  body: `date=${jog.date}&time=${jog.time}&distance=${jog.distance}`,
+  headers: new Headers({
+    'Authorization': `Bearer ${API_TOKEN}`,
+    'Content-Type': 'application/x-www-form-urlencoded'
+  })
+})
+  .then(_ => _.json());

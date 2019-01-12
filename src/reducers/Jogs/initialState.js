@@ -1,3 +1,4 @@
 export default {
-  jogs: []
+  jogs: [],
+  isFormOpen: false
 };
