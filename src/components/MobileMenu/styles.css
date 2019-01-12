@@ -1,0 +1,61 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+
+.mobile-menu .logo-icon img {
+    margin: 20px;
+}
+
+.mobile-menu ul {
+    margin: 30px auto;
+    list-style: none;
+    width: 200px;
+    text-align: center;
+}
+
+.mobile-menu ul li {
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+
+.mobile-menu ul li a {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s color;
+}
+
+.mobile-menu ul li a:hover {
+    color: #7ed321;
+}
+
+.mobile-menu .cross-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.mobile-menu .logout-icon:hover {
+    border-bottom: 0;
+    background: url('../../images/logout_icon_active.png') 0 0 no-repeat;
+}
+
+.mobile-menu .logout-icon {
+    display: inline-block;
+    background: url('../../images/logout_icon.png') 8px 9px no-repeat;
+    width: 40px;
+    height: 40px;
+}

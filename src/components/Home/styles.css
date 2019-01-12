@@ -17,6 +17,14 @@ header .logo-icon img {
     margin: 35px 0;
 }
 
+.nav-list .bar-icon {
+    display: none;
+    background: transparent;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 .nav-list ul {
     margin: 0;
 }
@@ -50,4 +58,22 @@ header .logo-icon img {
     background: url('../../images/logout_icon.png') 8px 9px no-repeat;
     width: 40px;
     height: 40px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-list .bar-icon {
+        display: inline-block;
+    }
+
+    .nav-list ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }

@@ -1,6 +1,7 @@
 .info-wrapper {
     width: 600px;
     margin: 70px auto;
+    padding: 10px 20px;
 }
 
 .info-wrapper h2 {
@@ -16,4 +17,10 @@
     line-height: 1.71;
     color: grey;
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+    .info-wrapper {
+        width: 90%;
+    }
 }
