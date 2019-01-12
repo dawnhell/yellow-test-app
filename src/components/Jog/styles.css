@@ -1,0 +1,22 @@
+.jog {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.jog img {
+    width: 90px;
+    height: 90px;
+}
+
+.jog .jog-info p {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    color: gray;
+}
+
+.jog .jog-info p strong {
+    color: black;
+}
+
