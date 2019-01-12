@@ -1,7 +1,9 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-const Login = ({ authToken, login, location }) => authToken ?
+import { isAuthenticated } from '../../utils/authUtil';
+
+const Login = ({ authToken, login, location }) => isAuthenticated() ?
   <Redirect to={(location.state && location.state.from) || '/' } /> :
   (
     <div>
