@@ -1,0 +1,18 @@
+import { compose } from 'recompose';
+import { connect } from 'react-redux';
+
+import Login from '../../components/Login';
+import { loginActionCreator } from '../../reducers/Login/actions';
+
+const mapStateToProps = (state) => ({
+  token: state.loginStore.token
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  login: () => dispatch(loginActionCreator())
+});
+
+export default compose(connect(
+  mapStateToProps,
+  mapDispatchToProps
+))(Login);
