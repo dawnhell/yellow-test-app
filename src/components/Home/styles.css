@@ -42,13 +42,12 @@ header .logo-icon img {
 
 .nav-list .logout-icon:hover {
     border-bottom: 0;
-    background: url('../../images/logout_icon.png');
+    background: url('../../images/logout_icon_active.png') 0 0 no-repeat;
 }
 
 .nav-list .logout-icon {
     display: inline-block;
-    background: url('../../images/logout_icon.png');
+    background: url('../../images/logout_icon.png') 8px 9px no-repeat;
     width: 40px;
     height: 40px;
-    transition: .4s background;
 }
