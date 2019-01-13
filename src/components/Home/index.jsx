@@ -12,7 +12,7 @@ const Home = ({ children, isMobileMenuOpen, setIsMobileMenuOpen }) => (
     {isMobileMenuOpen && (<MobileMenu setMobileMenuOpen={setIsMobileMenuOpen} />)}
 
     <header>
-      <Link className="logo-icon" to="/">
+      <Link className="logo-icon" to="/" onClick={() => setIsMobileMenuOpen(false)}>
         <img src={logoIcon} alt="logo_icon"/>
       </Link>
 

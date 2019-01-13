@@ -6,7 +6,7 @@
 .jogs-wrapper .add-btn {
     background: transparent;
     border: none;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     cursor: pointer;
@@ -20,4 +20,10 @@
     width: 60px;
     height: 60px;
     transition: .3s transform;
+}
+
+@media only screen and (max-width: 700px) {
+    .jogs-wrapper {
+        width: 80%;
+    }
 }
