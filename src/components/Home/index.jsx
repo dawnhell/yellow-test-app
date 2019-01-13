@@ -20,13 +20,13 @@ const Home = ({ children, isMobileMenuOpen, setIsMobileMenuOpen }) => (
         <nav className="nav-list">
           <ul>
             <li>
-              <Link to="/">Jogs</Link>
+              <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Jogs</Link>
             </li>
             <li>
-              <Link to="/info">Info</Link>
+              <Link to="/info" onClick={() => setIsMobileMenuOpen(false)}>Info</Link>
             </li>
             <li>
-              <Link to="/contact">Contact us</Link>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact us</Link>
             </li>
             <li>
               <Link className="logout-icon" to="/login" />

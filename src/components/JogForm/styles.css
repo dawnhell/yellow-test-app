@@ -70,3 +70,27 @@
     color: #7ed321;
     background: white;
 }
+
+@media only screen and (max-width: 700px) {
+    .jog-form-wrapper .jog-form {
+        width: 70%;
+    }
+
+    .jog-form form input {
+        width: 60%;
+    }
+
+    .jog-form form .submit-btn {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .jog-form form label {
+        width: 100%;
+    }
+
+    .jog-form form input {
+        width: 100%;
+    }
+}
